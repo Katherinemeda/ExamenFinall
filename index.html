@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>EXAMEN</title>
+
+
+
+   <script>
+   	function comprobarClave(){
+   		clave1= document.f1.clave1.value
+   		clave2= document.f1.clave2.value
+
+
+
+
+
+   		if (clave1 == "marce" && clave2 == "meda") {
+alert("Cargando")
+var href = "pagina.html";
+window.location=href;
+   		}
+   		else{
+   			alert("Las dos claves no coincide... Vuelve a intentarlo")
+   			var href ="index.html"
+   			window.location=href;
+   			};
+
+   	}
+
+
+
+
+   </script>
+	
+	</head>
+	<body style="background-color: orange">
+
+<h1 style="color: black" align="center">Loggin</h1>
+<br>
+<h1 style="color: black" align="center">Ingrese los datos</h1>
+<br>
+<table align="center">
+<form action="" name="f1">
+	<td align="center" background="imagenes/y.gif" width="600" height="220" style="border: solid;">
+	<h1 style="color: black">Usuario<input type="password" name="clave1" size="30"></h1>
+	<br>
+	<h1 style="color: black">Password<input type="password" name="clave2" size="30"></h1>
+	<br>
+</td>
+</table>
+<table align="center">
+<td align="center" style="border-color: black">
+	<br>
+<input type="button" value="INGRESAR" onclick="comprobarClave()" style="font-size: 40px">
+</td>
+</form>
+</table>
+
+</body>
+</html>
